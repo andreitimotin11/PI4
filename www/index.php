@@ -16,5 +16,10 @@ while (!feof($res)){
 }
 fclose($res);
 */
-$res = file(__DIR__. '/db.txt');
-var_dump($res);
+//$res = file(__DIR__. '/db.txt');
+//var_dump($res);
+?>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+	<input type="file" name="newimage">
+	<input type="submit">
+</form>
